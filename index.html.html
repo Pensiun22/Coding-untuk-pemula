@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal</title>
+    
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Add a gray background color with some padding */
+    body {
+        font-family: Arial;
+        padding: 20px;
+        background: #ff1f1;
+    }
+
+    /* Header/Blog Title */
+    .header {
+        padding: 30px;
+        font-size: 20px;
+        text-align: center;
+     background-image:   linear-gradient(to bottom, rgba(39, 118, 207, 0.5), rgba(0,0,255,0.5)),
+     url('');
+        
+        
+    }
+
+    /* Create two unequal columns that floats next to each other */
+    /* Left column */
+    .leftcolumn {
+        float: left;
+        width: 75%;
+    }
+
+    /* Right column */
+    .rightcolumn {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+    }
+
+    /* Fake image */
+    .fakeimg {
+        background-color: #85b6ee;
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Add a card effect for articles */
+    .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 20px;
+        text-align: center;
+        background: #71a8e7;
+        margin-top: 20px;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+
+        .leftcolumn,
+        .rightcolumn {
+            width: 100%;
+            padding: 0;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="header">
+        <h1>CODING LINGUA FRANCA BARU </h1>
+        <p style="color:rgb(229, 240, 127);font-size: 20px;"> MENCERDASKAN GENERASI EMAS INDONESIA 2045</p> 
+         
+        
+    </div>
+    
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>APA CODING</h2>
+                <h5>PENJELASAN TENTANG CODING,7 OKTOBER 2021</h5>
+                <div class="fakeimg" style="height:200px;"> <img src="img1.PNG" alt="" width="820px" height="160px"  >  </div>
+                <p>Menteri Riset dan Teknologi (Menristek)/Kepala Badan Riset dan Inovasi Nasional (BRIN) Bambang Permadi Soemantri
+                Brodjonegoro, masyarakat Indonesia khususnya generasi milenial, perlu untuk beradaptasi maksimal menghadapi perkembangan
+                revolusi industri 4.0. Untuk itu diperlukan upaya masif dan terstruktur, baik dari pemerintah maupun pihak swasta untuk
+                mengenalkan sistem coding ke seluruh lapisan
+                masyarakat.(Sumber:https://www.republika.co.id/berita/q1pwx3335/menristek-indonesia-perlu-menambah-ahli-coding)</p>
+                <p id="more" style="display:none">Di negara-negara tetangga bahkan kegiatan belajar coding sudah dilakukan di sekolah formal. Misalnya di Singapura, yang
+                mulai menjadikan coding sebagai kurikulum wajib bagi siswa sekolah dasar (SD),Mengapa mereka belajar pengkodingan sejak dini? Sebuah studi oleh Google dan Gallup menunjukkan bahwa mengenalkan coding
+                sejak dini adalah salah satu cara efektif untuk dapat mengecilkan kesenjangan gender dalam STEM.(https://www.tribunnews.com/techno/2021/07/12/indonesia-butuh-banyak-sdm-coding-karier-menjanjikan-gajinya-jangan-dipandang-sebelah-mata)
+                </p>
+                <button type="button" onclick="document.getElementById('more').style.display='block'">more</button>
+                <p>Tampilan bentuk Coding dan di browser</p>
+                
+                <button onclick="document.getElementById('myImage').src='Coding Blomberg.PNG'">Klik Coding</button>
+                
+                <img id="myImage" src="Tampilan Blomberg.PNG" style="width:500px">
+                
+                <button onclick="document.getElementById('myImage').src='Tampilan Blomberg.PNG'">klik Browser</button>
+                
+              
+            </div>
+            <div class="card">
+                <h2>CODING</h2>
+                <h5>Definisi Coding ,16 Oktober, 2021</h5>
+                <div class="fakeimg" style="height:200px;"> <img src="img2.png" alt="" width="820px" height="160px"  ></div>
+                <p id="makna">Coding mengacu pada pembuatan kode pemrograman komputer. Dalam pengertian yang lebih umum, kata coding digunakan untuk merujuk pada pemberian kode atau klasifikasi pada sesuatu.(Sumber:Technopedia.com)
+                </p>
+                <button type="button" onclick='document.getElementById("makna").innerHTML = "Coding is what makes it possible for us to create computer software, apps and websites. Your browser, your OS, the apps on your phone, Facebook, and this website – they’re all made with code."'>Arti Coding yang lain</button>
+                <p>Pengkodean adalah proses mengubah ide, solusi, dan instruksi ke dalam bahasa yang dapat dipahami oleh komputer – yaitu,
+                kode mesin biner.(Sumber:https://www.freecodecamp.org/news/what-is-coding/)</p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">               
+                <h2>About Me</h2>
+                <div class="fakeimg" style="height:100px;"><img src="Pic1.png" alt="Biak" width="100px" height="100px"> </div>
+                <p id="sembunyi" style="color: hsl(214, 82%, 51%);">Purwanto,aktif dalam kegiatan teknologi informatika dan pengembangan bahan ajar coding untuk anak-anak</p>
+                <button type="button" onclick="document.getElementById('sembunyi').style.display='none'">Hide</button>
+            </div>
+            <div class="card">
+                <h3>Popular Post</h3>
+                <div class="fakeimg">Image</div><br>
+                <div class="fakeimg">Image</div><br>
+                <div class="fakeimg">Image</div>
+            </div>
+            <div class="card">
+                <h3>Follow Me</h3>
+                <p>Some text..</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+</html>
